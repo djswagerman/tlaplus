@@ -1,0 +1,34 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 17 and seed -4529165750360702445 with 4 workers on 8 cores with 1214MB heap and 2730MB offheap memory [pid: 3675] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/dirk-janswagerman/Projects/TLA+/QWAN Intro TLA+/2_constraining_state.toolbox/Model_1/MC.tla
+Parsing file /Users/dirk-janswagerman/Projects/TLA+/QWAN Intro TLA+/2_constraining_state.toolbox/Model_1/2_constraining_state.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module 2_constraining_state
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2022-05-16 16:50:59)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2239:1 @!@!@
+TLC cannot handle this conjunct of the spec:
+line 12, col 8 to line 12, col 17 of module 2_constraining_state
+@!@!@ENDMSG 2239 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 927ms at (2022-05-16 16:50:59)
+@!@!@ENDMSG 2186 @!@!@
