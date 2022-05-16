@@ -9,12 +9,12 @@ Init ==
     /\ x = 0
 
 Next ==
-    / x' = x + 1
+    /\ x' = x + 1
 
 Spec ==
     Init /\ [][Next]_<<x>>
 
 =============================================================================
 \* Modification History
-\* Last modified Mon May 16 16:52:57 CEST 2022 by dirk-janswagerman
+\* Last modified Mon May 16 20:55:36 CEST 2022 by dirk-janswagerman
 \* Created Mon May 16 16:49:49 CEST 2022 by dirk-janswagerman
