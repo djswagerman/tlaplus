@@ -1,0 +1,4 @@
+# Compiled source #
+###################
+*_snapshot*
+*.out
