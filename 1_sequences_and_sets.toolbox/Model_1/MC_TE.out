@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 30 and seed -3299420098832505698 with 4 workers on 10 cores with 2428MB heap and 5460MB offheap memory [pid: 11545] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 118 and seed 3622769685778076861 with 4 workers on 10 cores with 2428MB heap and 5460MB offheap memory [pid: 11756] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -23,7 +23,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2022-05-16 20:55:14)
+Starting... (2022-05-16 21:16:42)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
@@ -39,11 +39,11 @@ Computing initial states...
 "SUBSET numbers1"
 {{}, {1}, {2}, {1, 2}}
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2022-05-16 20:55:16.
+Finished computing initial states: 1 distinct state generated at 2022-05-16 21:16:43.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2115:1 @!@!@
 No next state actions defined to generate successor states from.
 @!@!@ENDMSG 2115 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 2080ms at (2022-05-16 20:55:16)
+Finished in 1864ms at (2022-05-16 21:16:43)
 @!@!@ENDMSG 2186 @!@!@

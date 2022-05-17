@@ -1,0 +1,23 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-8683793654218889728 [label="/\\ state = \"operational\"\n/\\ customers = [c1 |-> [assets |-> [credit |-> (50 :> 2 @@ 100 :> 2), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (50 :> 0 @@ 100 :> 0), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]",style = filled]
+-8683793654218889728 -> -7206990023918733637 [label="",color="2",fontcolor="2"];
+-7206990023918733637 [label="/\\ state = \"operational\"\n/\\ customers = [c1 |-> [assets |-> [credit |-> (50 :> 1 @@ 100 :> 2), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (50 :> 1 @@ 100 :> 0), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-7206990023918733637 -> 3629648794725877128 [label="",color="2",fontcolor="2"];
+3629648794725877128 [label="/\\ state = \"operational\"\n/\\ customers = [c1 |-> [assets |-> [credit |-> (50 :> 0 @@ 100 :> 2), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (50 :> 2 @@ 100 :> 0), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-8683793654218889728 -> 9021396900221707797 [label="",color="2",fontcolor="2"];
+9021396900221707797 [label="/\\ state = \"operational\"\n/\\ customers = [c1 |-> [assets |-> [credit |-> (50 :> 2 @@ 100 :> 1), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (50 :> 0 @@ 100 :> 1), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+9021396900221707797 -> 7040577302923687598 [label="",color="2",fontcolor="2"];
+7040577302923687598 [label="/\\ state = \"operational\"\n/\\ customers = [c1 |-> [assets |-> [credit |-> (50 :> 1 @@ 100 :> 1), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (50 :> 1 @@ 100 :> 1), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+9021396900221707797 -> 510931201921639948 [label="",color="2",fontcolor="2"];
+510931201921639948 [label="/\\ state = \"operational\"\n/\\ customers = [c1 |-> [assets |-> [credit |-> (50 :> 2 @@ 100 :> 0), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (50 :> 0 @@ 100 :> 2), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+7040577302923687598 -> -4030267182386248291 [label="",color="2",fontcolor="2"];
+-4030267182386248291 [label="/\\ state = \"operational\"\n/\\ customers = [c1 |-> [assets |-> [credit |-> (50 :> 0 @@ 100 :> 1), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (50 :> 2 @@ 100 :> 1), bank |-> (50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+{rank = same; -8683793654218889728;}
+{rank = same; -7206990023918733637;9021396900221707797;}
+{rank = same; 7040577302923687598;}
+}
+}

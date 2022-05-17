@@ -1,0 +1,189 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 92 and seed 140679523692036757 with 5 workers on 10 cores with 2428MB heap and 5460MB offheap memory [pid: 12085] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/dirk-janswagerman/.tlaplus/tlaplus/protocols/blackchannel_1.toolbox/Model_1/MC.tla
+Parsing file /Users/dirk-janswagerman/.tlaplus/tlaplus/protocols/blackchannel_1.toolbox/Model_1/blackchannel_1.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/F3E9FB25-C538-43C2-850B-13F16E89907A/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/F3E9FB25-C538-43C2-850B-13F16E89907A/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/F3E9FB25-C538-43C2-850B-13F16E89907A/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/F3E9FB25-C538-43C2-850B-13F16E89907A/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/F3E9FB25-C538-43C2-850B-13F16E89907A/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module blackchannel_1
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2022-02-28 22:12:48)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 1000:1 @!@!@
+@!@!@STARTMSG 2283:0 @!@!@
+The argument of Len should be a sequence, but instead it is:
+[S |-> <<>>]
+@!@!@ENDMSG 2283 @!@!@
+@!@!@ENDMSG 1000 @!@!@
+@!@!@STARTMSG 2103:1 @!@!@
+The error occurred when TLC was evaluating the nested
+expressions at the following positions:
+0. Line 105, column 9 to line 116, column 85 in blackchannel_1
+1. Line 105, column 12 to line 105, column 32 in blackchannel_1
+2. Line 106, column 12 to line 106, column 24 in blackchannel_1
+3. Line 107, column 12 to line 107, column 27 in blackchannel_1
+4. Line 109, column 12 to line 109, column 46 in blackchannel_1
+5. Line 111, column 12 to line 111, column 54 in blackchannel_1
+6. Line 113, column 12 to line 113, column 63 in blackchannel_1
+7. Line 114, column 12 to line 116, column 85 in blackchannel_1
+8. Line 11, column 1 to line 11, column 17 in MC
+9. Line 11, column 1 to line 11, column 13 in MC
+
+
+@!@!@ENDMSG 2103 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2022-02-28 22:12:49
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 104, col 1 to line 104, col 4 of module blackchannel_1>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 9 to line 116, col 85 of module blackchannel_1: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<startSender line 118, col 1 to line 118, col 17 of module blackchannel_1>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 31 to line 119, col 74 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 31 to line 120, col 71 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 122, col 31 to line 122, col 71 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 25 to line 124, col 78 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<PrepareMessage line 126, col 1 to line 126, col 20 of module blackchannel_1>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 128, col 30 to line 128, col 92 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 129, col 28 to line 129, col 68 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 130, col 28 to line 132, col 55 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SendMessage line 134, col 1 to line 134, col 17 of module blackchannel_1>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 136, col 25 to line 136, col 80 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 25 to line 137, col 50 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 25 to line 138, col 65 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 139, col 25 to line 140, col 52 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<startReceiver line 145, col 1 to line 145, col 19 of module blackchannel_1>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 147, col 33 to line 147, col 107 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 148, col 33 to line 148, col 71 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 33 to line 149, col 64 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 151, col 33 to line 151, col 91 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 152, col 27 to line 152, col 69 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 153, col 27 to line 153, col 74 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<startMessageCorrupter line 157, col 1 to line 157, col 27 of module blackchannel_1>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 158, col 41 to line 158, col 83 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 159, col 41 to line 159, col 84 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 160, col 41 to line 160, col 88 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 161, col 35 to line 163, col 79 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<RemoveMessage line 165, col 1 to line 165, col 19 of module blackchannel_1>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 167, col 27 to line 167, col 96 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 168, col 27 to line 168, col 77 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 169, col 27 to line 170, col 71 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<CorruptMessage line 172, col 1 to line 172, col 20 of module blackchannel_1>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 174, col 28 to line 174, col 78 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 175, col 28 to line 177, col 55 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ChangeMessageOrder line 179, col 1 to line 179, col 24 of module blackchannel_1>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 181, col 32 to line 181, col 82 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 182, col 32 to line 184, col 76 of module blackchannel_1: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv_164608276757818000 line 10, col 1 to line 10, col 22 of module MC>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 11, col 1 to line 11, col 17 of module MC: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(1) at 2022-02-28 22:12:49: 1 states generated (30 s/min), 1 distinct states found (30 ds/min), 1 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+1 states generated, 1 distinct states found, 1 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1993ms at (2022-02-28 22:12:49)
+@!@!@ENDMSG 2186 @!@!@

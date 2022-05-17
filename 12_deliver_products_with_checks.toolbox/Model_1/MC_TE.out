@@ -1,0 +1,662 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 99 and seed 2247077953155445939 with 5 workers on 10 cores with 2428MB heap and 5460MB offheap memory [pid: 1581] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/dirk-janswagerman/Projects/TLA+/tlaplus/12_deliver_products_with_checks.toolbox/Model_1/MC.tla
+Parsing file /Users/dirk-janswagerman/Projects/TLA+/tlaplus/12_deliver_products_with_checks.toolbox/Model_1/12_deliver_products_with_checks.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/9C9A1684-5D4E-493A-B117-5DC00FD82CF9/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/9C9A1684-5D4E-493A-B117-5DC00FD82CF9/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/9C9A1684-5D4E-493A-B117-5DC00FD82CF9/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/9C9A1684-5D4E-493A-B117-5DC00FD82CF9/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module 12_deliver_products_with_checks
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2022-05-17 15:21:11)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2022-05-17 15:21:13.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2112:1 @!@!@
+Action property TotalCoinsIsConstant is violated.
+@!@!@ENDMSG 2112 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ state = "operational"
+/\ selected_product = ""
+/\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 2 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]
+/\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <InsertCredit line 63, col 33 to line 65, col 72 of module 12_deliver_products_with_checks>
+/\ state = "operational"
+/\ selected_product = ""
+/\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 2 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]
+/\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 0 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <InsertCredit line 63, col 33 to line 65, col 72 of module 12_deliver_products_with_checks>
+/\ state = "operational"
+/\ selected_product = ""
+/\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 2 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]
+/\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 0 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <InsertCredit line 63, col 33 to line 65, col 72 of module 12_deliver_products_with_checks>
+/\ state = "operational"
+/\ selected_product = ""
+/\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]
+/\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 1 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <InsertCredit line 63, col 33 to line 65, col 72 of module 12_deliver_products_with_checks>
+/\ state = "operational"
+/\ selected_product = ""
+/\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]
+/\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <SelectProduct line 107, col 37 to line 108, col 87 of module 12_deliver_products_with_checks>
+/\ state = "operational"
+/\ selected_product = "saffron_sky"
+/\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]
+/\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <DeliverProduct line 151, col 36 to line 151, col 105 of module 12_deliver_products_with_checks>
+/\ state = "operational"
+/\ selected_product = ""
+/\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 1, desert_white |-> 0, ocean_blue |-> 0]]]]
+/\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 1), product |-> [saffron_sky |-> 1, desert_white |-> 2, ocean_blue |-> 2]]]]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2022-05-17 15:21:14
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 80, col 1 to line 80, col 4 of module 12_deliver_products_with_checks>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 33 to line 104, col 56 of module 12_deliver_products_with_checks: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<InsertCredit line 62, col 1 to line 62, col 50 of module 12_deliver_products_with_checks>: 26:1430
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 36 to line 63, col 57 of module 12_deliver_products_with_checks: 1402
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 63, col 36 to line 63, col 40 of module 12_deliver_products_with_checks: 800
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 56, col 36 to line 56, col 85 of module 12_deliver_products_with_checks: 1430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 56, col 36 to line 56, col 81 of module 12_deliver_products_with_checks: 1806
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 57, col 36 to line 57, col 98 of module 12_deliver_products_with_checks: 1430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 58, col 36 to line 58, col 120 of module 12_deliver_products_with_checks: 1430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 59, col 36 to line 59, col 120 of module 12_deliver_products_with_checks: 1430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 74 to line 64, col 82 of module 12_deliver_products_with_checks: 1806
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 85 to line 64, col 100 of module 12_deliver_products_with_checks: 1430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 103 to line 64, col 115 of module 12_deliver_products_with_checks: 1806
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 118 to line 64, col 137 of module 12_deliver_products_with_checks: 1430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 140 to line 64, col 143 of module 12_deliver_products_with_checks: 1806
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 48 to line 64, col 56 of module 12_deliver_products_with_checks: 602
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 65, col 36 to line 65, col 72 of module 12_deliver_products_with_checks: 1430
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReturnCredit line 68, col 1 to line 68, col 50 of module 12_deliver_products_with_checks (70 37 73 69)>: 22:1217
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 40 to line 70, col 118 of module 12_deliver_products_with_checks: 724
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 70, col 40 to line 70, col 114 of module 12_deliver_products_with_checks: 796
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 24, col 33 to line 25, col 125 of module 12_deliver_products_with_checks: 3184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 24, col 36 to line 24, col 42 of module 12_deliver_products_with_checks: 3184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 25, col 38 to line 25, col 125 of module 12_deliver_products_with_checks: 2388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 25, col 38 to line 25, col 76 of module 12_deliver_products_with_checks: 2388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 25, col 80 to line 25, col 125 of module 12_deliver_products_with_checks: 2388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 25, col 91 to line 25, col 91 of module 12_deliver_products_with_checks: 1592
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 25, col 94 to line 25, col 124 of module 12_deliver_products_with_checks: 2388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 70, col 51 to line 70, col 102 of module 12_deliver_products_with_checks: 796
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 70, col 105 to line 70, col 113 of module 12_deliver_products_with_checks: 796
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 56, col 36 to line 56, col 85 of module 12_deliver_products_with_checks: 1217
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 56, col 36 to line 56, col 81 of module 12_deliver_products_with_checks: 2172
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 57, col 36 to line 57, col 98 of module 12_deliver_products_with_checks: 1217
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 58, col 36 to line 58, col 120 of module 12_deliver_products_with_checks: 1217
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 59, col 36 to line 59, col 120 of module 12_deliver_products_with_checks: 1217
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 78 to line 71, col 93 of module 12_deliver_products_with_checks: 2172
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 96 to line 71, col 104 of module 12_deliver_products_with_checks: 1217
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 107 to line 71, col 126 of module 12_deliver_products_with_checks: 2172
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 129 to line 71, col 141 of module 12_deliver_products_with_checks: 1217
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 144 to line 71, col 147 of module 12_deliver_products_with_checks: 2172
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 52 to line 71, col 60 of module 12_deliver_products_with_checks: 724
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 72, col 40 to line 72, col 67 of module 12_deliver_products_with_checks: 1217
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 40 to line 73, col 69 of module 12_deliver_products_with_checks: 1217
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReturnCredit line 68, col 1 to line 68, col 50 of module 12_deliver_products_with_checks (75 37 78 98)>: 0:36
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 75, col 40 to line 75, col 118 of module 12_deliver_products_with_checks: 832
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 75, col 40 to line 75, col 114 of module 12_deliver_products_with_checks: 796
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 24, col 33 to line 25, col 125 of module 12_deliver_products_with_checks: 3184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 24, col 36 to line 24, col 42 of module 12_deliver_products_with_checks: 3184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 25, col 38 to line 25, col 125 of module 12_deliver_products_with_checks: 2388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 25, col 38 to line 25, col 76 of module 12_deliver_products_with_checks: 2388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 25, col 80 to line 25, col 125 of module 12_deliver_products_with_checks: 2388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 25, col 91 to line 25, col 91 of module 12_deliver_products_with_checks: 1592
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 25, col 94 to line 25, col 124 of module 12_deliver_products_with_checks: 2388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 75, col 51 to line 75, col 102 of module 12_deliver_products_with_checks: 796
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 75, col 105 to line 75, col 113 of module 12_deliver_products_with_checks: 796
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 40 to line 76, col 65 of module 12_deliver_products_with_checks: 108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 76, col 40 to line 76, col 44 of module 12_deliver_products_with_checks: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 77, col 40 to line 77, col 62 of module 12_deliver_products_with_checks: 36
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 78, col 40 to line 78, col 98 of module 12_deliver_products_with_checks: 36
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SelectProduct line 106, col 1 to line 106, col 60 of module 12_deliver_products_with_checks>: 111:796
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 37 to line 107, col 63 of module 12_deliver_products_with_checks: 796
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 108, col 40 to line 108, col 87 of module 12_deliver_products_with_checks: 796
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<DeliverProduct line 120, col 1 to line 120, col 61 of module 12_deliver_products_with_checks (151 36 151 105)>: 14:112
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 121, col 36 to line 121, col 47 of module 12_deliver_products_with_checks: 904
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 121, col 36 to line 121, col 42 of module 12_deliver_products_with_checks: 795
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 112, col 36 to line 112, col 131 of module 12_deliver_products_with_checks: 109
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 112, col 36 to line 112, col 110 of module 12_deliver_products_with_checks: 462
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 24, col 33 to line 25, col 125 of module 12_deliver_products_with_checks: 1848
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 24, col 36 to line 24, col 42 of module 12_deliver_products_with_checks: 1848
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 25, col 38 to line 25, col 125 of module 12_deliver_products_with_checks: 1386
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 25, col 38 to line 25, col 76 of module 12_deliver_products_with_checks: 1386
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 25, col 80 to line 25, col 125 of module 12_deliver_products_with_checks: 1386
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 25, col 91 to line 25, col 91 of module 12_deliver_products_with_checks: 924
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 25, col 94 to line 25, col 124 of module 12_deliver_products_with_checks: 1386
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 112, col 47 to line 112, col 98 of module 12_deliver_products_with_checks: 462
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 112, col 101 to line 112, col 109 of module 12_deliver_products_with_checks: 462
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 112, col 115 to line 112, col 131 of module 12_deliver_products_with_checks: 462
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 122, col 67 to line 122, col 86 of module 12_deliver_products_with_checks: 462
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 122, col 89 to line 122, col 95 of module 12_deliver_products_with_checks: 462
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 116, col 40 to line 116, col 83 of module 12_deliver_products_with_checks: 27563
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 116, col 40 to line 116, col 63 of module 12_deliver_products_with_checks: 27453
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 24, col 33 to line 25, col 125 of module 12_deliver_products_with_checks: 109812
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 24, col 36 to line 24, col 42 of module 12_deliver_products_with_checks: 109812
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 25, col 38 to line 25, col 125 of module 12_deliver_products_with_checks: 82359
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 25, col 38 to line 25, col 76 of module 12_deliver_products_with_checks: 82359
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 25, col 80 to line 25, col 125 of module 12_deliver_products_with_checks: 82359
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 25, col 91 to line 25, col 91 of module 12_deliver_products_with_checks: 54906
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 25, col 94 to line 25, col 124 of module 12_deliver_products_with_checks: 82359
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 116, col 51 to line 116, col 51 of module 12_deliver_products_with_checks: 27453
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 116, col 54 to line 116, col 62 of module 12_deliver_products_with_checks: 27453
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 116, col 67 to line 116, col 83 of module 12_deliver_products_with_checks: 27453
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 65 to line 117, col 133 of module 12_deliver_products_with_checks: 330
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 117, col 65 to line 117, col 71 of module 12_deliver_products_with_checks: 1128
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 117, col 76 to line 117, col 133 of module 12_deliver_products_with_checks: 1128
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 53 to line 117, col 61 of module 12_deliver_products_with_checks: 575
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 115, col 45 to line 115, col 87 of module 12_deliver_products_with_checks: 129:82365
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 115, col 46 to line 115, col 54 of module 12_deliver_products_with_checks: 129
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 115, col 59 to line 115, col 86 of module 12_deliver_products_with_checks: 129:38516
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 115, col 60 to line 115, col 60 of module 12_deliver_products_with_checks: 774
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 115, col 69 to line 115, col 85 of module 12_deliver_products_with_checks: 129
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 70 to line 123, col 89 of module 12_deliver_products_with_checks: 129
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 92 to line 123, col 98 of module 12_deliver_products_with_checks: 129
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 124, col 36 to line 140, col 57 of module 12_deliver_products_with_checks: 110
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 124, col 57 to line 140, col 57 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 124, col 58 to line 137, col 57 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 124, col 59 to line 132, col 57 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 124, col 63 to line 124, col 78 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 126, col 72 to line 130, col 168 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 127, col 69 to line 130, col 168 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 128, col 73 to line 130, col 168 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 128, col 76 to line 129, col 175 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 128, col 76 to line 128, col 99 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 24, col 33 to line 25, col 125 of module 12_deliver_products_with_checks: 5980
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 24, col 36 to line 24, col 42 of module 12_deliver_products_with_checks: 5980
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 25, col 38 to line 25, col 125 of module 12_deliver_products_with_checks: 4485
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 25, col 38 to line 25, col 76 of module 12_deliver_products_with_checks: 4485
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 25, col 80 to line 25, col 125 of module 12_deliver_products_with_checks: 4485
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 25, col 91 to line 25, col 91 of module 12_deliver_products_with_checks: 2990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 25, col 94 to line 25, col 124 of module 12_deliver_products_with_checks: 4485
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 128, col 87 to line 128, col 87 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 128, col 90 to line 128, col 98 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 129, col 81 to line 129, col 175 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 129, col 81 to line 129, col 155 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 24, col 33 to line 25, col 125 of module 12_deliver_products_with_checks: 5980
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 24, col 36 to line 24, col 42 of module 12_deliver_products_with_checks: 5980
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 25, col 38 to line 25, col 125 of module 12_deliver_products_with_checks: 4485
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 25, col 38 to line 25, col 76 of module 12_deliver_products_with_checks: 4485
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 25, col 80 to line 25, col 125 of module 12_deliver_products_with_checks: 4485
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 25, col 91 to line 25, col 91 of module 12_deliver_products_with_checks: 2990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 25, col 94 to line 25, col 124 of module 12_deliver_products_with_checks: 4485
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 129, col 92 to line 129, col 143 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 129, col 146 to line 129, col 154 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 129, col 159 to line 129, col 175 of module 12_deliver_products_with_checks: 1495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 130, col 76 to line 130, col 168 of module 12_deliver_products_with_checks: 121
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 130, col 100 to line 130, col 168 of module 12_deliver_products_with_checks: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 130, col 88 to line 130, col 96 of module 12_deliver_products_with_checks: 121
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||line 127, col 82 to line 127, col 124 of module 12_deliver_products_with_checks: 112:98263
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 127, col 83 to line 127, col 91 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 127, col 96 to line 127, col 123 of module 12_deliver_products_with_checks: 112:33936
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 127, col 97 to line 127, col 97 of module 12_deliver_products_with_checks: 672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 127, col 106 to line 127, col 122 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 134, col 72 to line 136, col 227 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 135, col 69 to line 136, col 227 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 135, col 128 to line 136, col 227 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 135, col 128 to line 135, col 247 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 135, col 128 to line 135, col 151 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 24, col 33 to line 25, col 125 of module 12_deliver_products_with_checks: 11704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 24, col 36 to line 24, col 42 of module 12_deliver_products_with_checks: 11704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 25, col 38 to line 25, col 125 of module 12_deliver_products_with_checks: 8778
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 25, col 38 to line 25, col 76 of module 12_deliver_products_with_checks: 8778
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 25, col 80 to line 25, col 125 of module 12_deliver_products_with_checks: 8778
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 25, col 91 to line 25, col 91 of module 12_deliver_products_with_checks: 5852
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 25, col 94 to line 25, col 124 of module 12_deliver_products_with_checks: 8778
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 135, col 139 to line 135, col 139 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 135, col 142 to line 135, col 150 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 135, col 155 to line 135, col 247 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 135, col 155 to line 135, col 227 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 24, col 33 to line 25, col 125 of module 12_deliver_products_with_checks: 11704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 24, col 36 to line 24, col 42 of module 12_deliver_products_with_checks: 11704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 25, col 38 to line 25, col 125 of module 12_deliver_products_with_checks: 8778
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 25, col 38 to line 25, col 76 of module 12_deliver_products_with_checks: 8778
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 25, col 80 to line 25, col 125 of module 12_deliver_products_with_checks: 8778
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 25, col 91 to line 25, col 91 of module 12_deliver_products_with_checks: 5852
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 25, col 94 to line 25, col 124 of module 12_deliver_products_with_checks: 8778
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 135, col 166 to line 135, col 215 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 135, col 218 to line 135, col 226 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 135, col 231 to line 135, col 247 of module 12_deliver_products_with_checks: 2926
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 136, col 76 to line 136, col 227 of module 12_deliver_products_with_checks: 185
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 136, col 100 to line 136, col 227 of module 12_deliver_products_with_checks: 519
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 136, col 88 to line 136, col 96 of module 12_deliver_products_with_checks: 185
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||line 135, col 82 to line 135, col 124 of module 12_deliver_products_with_checks: 112:99694
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 135, col 83 to line 135, col 91 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||line 135, col 96 to line 135, col 123 of module 12_deliver_products_with_checks: 112:33936
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 135, col 97 to line 135, col 97 of module 12_deliver_products_with_checks: 672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 135, col 106 to line 135, col 122 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 139, col 72 to line 139, col 126 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 141, col 36 to line 143, col 53 of module 12_deliver_products_with_checks: 110
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 141, col 53 to line 143, col 53 of module 12_deliver_products_with_checks: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 144, col 36 to line 144, col 48 of module 12_deliver_products_with_checks: 110
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 145, col 36 to line 145, col 54 of module 12_deliver_products_with_checks: 110
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 151, col 52 to line 151, col 64 of module 12_deliver_products_with_checks: 111
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 151, col 67 to line 151, col 86 of module 12_deliver_products_with_checks: 462
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 151, col 89 to line 151, col 104 of module 12_deliver_products_with_checks: 795
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(7) at 2022-05-17 15:21:14: 3.568 states generated (56.115 s/min), 174 distinct states found (2.736 ds/min), 82 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+3568 states generated, 174 distinct states found, 82 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 7.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 7 and the 95th percentile is 6).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 3860ms at (2022-05-17 15:21:14)
+@!@!@ENDMSG 2186 @!@!@

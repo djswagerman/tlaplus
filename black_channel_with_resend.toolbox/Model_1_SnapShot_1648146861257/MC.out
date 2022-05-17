@@ -1,0 +1,303 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 5 and seed -2064515053761653144 with 5 workers on 10 cores with 2428MB heap and 5460MB offheap memory [pid: 85115] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/dirk-janswagerman/.tlaplus/tlaplus/protocols/black_channel_with_resend.toolbox/Model_1/MC.tla
+Parsing file /Users/dirk-janswagerman/.tlaplus/tlaplus/protocols/black_channel_with_resend.toolbox/Model_1/black_channel_with_resend.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module black_channel_with_resend
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2022-03-24 19:34:16)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2022-03-24 19:34:17.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2193:0 @!@!@
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 6.2E-10
+  based on the actual fingerprints:  val = 1.5E-10
+@!@!@ENDMSG 2193 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2022-03-24 19:34:19
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 127, col 1 to line 127, col 4 of module black_channel_with_resend>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 128, col 9 to line 145, col 86 of module black_channel_with_resend: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<startSender line 147, col 1 to line 147, col 17 of module black_channel_with_resend>: 13879:49751
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 147, col 25 to line 147, col 48 of module black_channel_with_resend: 95317
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 147, col 25 to line 147, col 32 of module black_channel_with_resend: 72534
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 148, col 28 to line 148, col 73 of module black_channel_with_resend: 22783
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 31 to line 149, col 72 of module black_channel_with_resend: 11390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 149, col 31 to line 149, col 50 of module black_channel_with_resend: 22783
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 149, col 54 to line 149, col 72 of module black_channel_with_resend: 22783
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 77 to line 149, col 119 of module black_channel_with_resend: 11390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 149, col 77 to line 149, col 97 of module black_channel_with_resend: 20447
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 149, col 102 to line 149, col 119 of module black_channel_with_resend: 20447
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 150, col 31 to line 150, col 71 of module black_channel_with_resend: 11390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 151, col 31 to line 151, col 58 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 151, col 31 to line 151, col 54 of module black_channel_with_resend: 22783
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 152, col 31 to line 152, col 78 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 153, col 25 to line 159, col 52 of module black_channel_with_resend: 49751
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<CreateMessage line 161, col 1 to line 161, col 19 of module black_channel_with_resend>: 223:45566
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 161, col 27 to line 161, col 52 of module black_channel_with_resend: 95317
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 161, col 27 to line 161, col 34 of module black_channel_with_resend: 72534
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 162, col 27 to line 162, col 74 of module black_channel_with_resend: 22783
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 164, col 29 to line 166, col 78 of module black_channel_with_resend: 45566
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 163, col 36 to line 163, col 38 of module black_channel_with_resend: 22783
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 167, col 27 to line 167, col 67 of module black_channel_with_resend: 45566
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 168, col 27 to line 172, col 71 of module black_channel_with_resend: 45566
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SendMessage line 174, col 1 to line 174, col 17 of module black_channel_with_resend>: 2811:11390
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 174, col 25 to line 174, col 48 of module black_channel_with_resend: 83924
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 174, col 25 to line 174, col 32 of module black_channel_with_resend: 72534
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 175, col 25 to line 175, col 104 of module black_channel_with_resend: 11390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 176, col 25 to line 176, col 74 of module black_channel_with_resend: 11390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 177, col 25 to line 177, col 65 of module black_channel_with_resend: 11390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 178, col 25 to line 182, col 69 of module black_channel_with_resend: 11390
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AcknowledgeMessage line 184, col 1 to line 184, col 24 of module black_channel_with_resend>: 4583:15578
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 32 to line 184, col 62 of module black_channel_with_resend: 88112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 184, col 32 to line 184, col 39 of module black_channel_with_resend: 72534
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 185, col 32 to line 185, col 58 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 186, col 32 to line 186, col 118 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 187, col 32 to line 187, col 78 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 188, col 36 to line 188, col 93 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 189, col 43 to line 189, col 92 of module black_channel_with_resend: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 190, col 43 to line 190, col 123 of module black_channel_with_resend: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 191, col 43 to line 191, col 46 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 192, col 43 to line 193, col 78 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 194, col 32 to line 194, col 72 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 195, col 32 to line 199, col 59 of module black_channel_with_resend: 15578
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<startReceiver line 204, col 1 to line 204, col 19 of module black_channel_with_resend>: 12394:24672
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 204, col 27 to line 204, col 52 of module black_channel_with_resend: 97206
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 204, col 27 to line 204, col 34 of module black_channel_with_resend: 72534
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 205, col 27 to line 205, col 50 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 205, col 27 to line 205, col 46 of module black_channel_with_resend: 45570
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 206, col 27 to line 206, col 70 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 207, col 27 to line 213, col 71 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiveMessage line 215, col 1 to line 215, col 20 of module black_channel_with_resend>: 16094:24672
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 215, col 28 to line 215, col 54 of module black_channel_with_resend: 97206
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 215, col 28 to line 215, col 35 of module black_channel_with_resend: 72534
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 216, col 28 to line 216, col 50 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 216, col 28 to line 216, col 46 of module black_channel_with_resend: 26964
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 217, col 28 to line 217, col 102 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 218, col 28 to line 218, col 66 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 219, col 28 to line 219, col 100 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 220, col 28 to line 220, col 70 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 221, col 28 to line 226, col 55 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<startMessageCorrupter line 230, col 1 to line 230, col 27 of module black_channel_with_resend>: 13823:24672
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 230, col 35 to line 230, col 68 of module black_channel_with_resend: 97206
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 230, col 35 to line 230, col 42 of module black_channel_with_resend: 72534
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 231, col 35 to line 231, col 58 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 231, col 35 to line 231, col 54 of module black_channel_with_resend: 38868
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 232, col 35 to line 232, col 77 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 233, col 35 to line 242, col 62 of module black_channel_with_resend: 24672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<RemoveMessage line 244, col 1 to line 244, col 19 of module black_channel_with_resend>: 8726:33666
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 244, col 27 to line 244, col 52 of module black_channel_with_resend: 106200
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 244, col 27 to line 244, col 34 of module black_channel_with_resend: 72534
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 245, col 27 to line 245, col 96 of module black_channel_with_resend: 33666
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 245, col 45 to line 245, col 96 of module black_channel_with_resend: 33666
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 6, col 21 to line 10, col 37 of module black_channel_with_resend: 33666:55451
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 245, col 53 to line 245, col 79 of module black_channel_with_resend: 10464
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 245, col 82 to line 245, col 95 of module black_channel_with_resend: 33666
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 246, col 27 to line 246, col 68 of module black_channel_with_resend: 33666
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 247, col 27 to line 247, col 77 of module black_channel_with_resend: 33666
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 248, col 27 to line 253, col 54 of module black_channel_with_resend: 33666
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(43) at 2022-03-24 19:34:19: 229.968 states generated (3.111.179 s/min), 72.534 distinct states found (981.294 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+229968 states generated, 72534 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 43.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 5 and the 95th percentile is 3).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 4451ms at (2022-03-24 19:34:19)
+@!@!@ENDMSG 2186 @!@!@

@@ -1,0 +1,630 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 125 and seed -5424295411692918261 with 5 workers on 10 cores with 2428MB heap and 5460MB offheap memory [pid: 85166] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/dirk-janswagerman/.tlaplus/tlaplus/protocols/black_channel_with_resend.toolbox/Model_1/MC.tla
+Parsing file /Users/dirk-janswagerman/.tlaplus/tlaplus/protocols/black_channel_with_resend.toolbox/Model_1/black_channel_with_resend.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /private/var/folders/sy/rhv1w43j3bscfpls8nxgbl1m0000gn/T/AppTranslocation/B51B7C6A-254C-4B0B-931B-A41F6CB0774B/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module black_channel_with_resend
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2022-03-24 19:40:40)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2022-03-24 19:40:41.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant inv_164814723963787000 is violated.
+@!@!@ENDMSG 2110 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ createMessageCounter = 0
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> <<>>]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = <<>>
+/\ message = [counter |-> 0, content |-> <<>>, checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <startSender line 146, col 22 to line 158, col 52 of module black_channel_with_resend>
+/\ createMessageCounter = 0
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "CreateMessage", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> <<>>]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = <<>>
+/\ message = [counter |-> 0, content |-> <<>>, checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <CreateMessage line 160, col 24 to line 171, col 71 of module black_channel_with_resend>
+/\ createMessageCounter = 1
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> <<>>]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ message = [counter |-> 1, content |-> "a", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <startSender line 146, col 22 to line 158, col 52 of module black_channel_with_resend>
+/\ createMessageCounter = 1
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "CreateMessage", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> <<>>]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ message = [counter |-> 1, content |-> "a", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <CreateMessage line 160, col 24 to line 171, col 71 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> <<>>]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <startSender line 146, col 22 to line 158, col 52 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "SendMessage", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> <<>>]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <SendMessage line 173, col 22 to line 181, col 69 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> <<>>]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <startReceiver line 203, col 24 to line 212, col 71 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "ReceiveMessage"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> <<>>]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <ReceiveMessage line 214, col 25 to line 225, col 55 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <startSender line 146, col 22 to line 158, col 52 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [ MC |-> "startMessageCorrupter",
+  S |-> "AcknowledgeMessage",
+  R |-> "startReceiver" ]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 1
+/\ acknowledgedMessage = [S |-> <<>>]
+/\ acknowledgedMessages = <<>>
+/\ acknowledgeChannel = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <AcknowledgeMessage line 183, col 29 to line 198, col 59 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 2
+/\ acknowledgedMessage = [S |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ acknowledgedMessages = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <startSender line 146, col 22 to line 158, col 52 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "SendMessage", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 2
+/\ acknowledgedMessage = [S |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ acknowledgedMessages = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <SendMessage line 173, col 22 to line 181, col 69 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 2
+/\ acknowledgedMessage = [S |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ acknowledgedMessages = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<[counter |-> 2, content |-> "b", checksum |-> 0]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <startReceiver line 203, col 24 to line 212, col 71 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "ReceiveMessage"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 2
+/\ acknowledgedMessage = [S |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ acknowledgedMessages = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<[counter |-> 2, content |-> "b", checksum |-> 0]>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <ReceiveMessage line 214, col 25 to line 225, col 55 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> [counter |-> 2, content |-> "b", checksum |-> 0]]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 2
+/\ acknowledgedMessage = [S |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ acknowledgedMessages = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ acknowledgeChannel = <<[counter |-> 2, content |-> "b", checksum |-> 0]>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <startSender line 146, col 22 to line 158, col 52 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [ MC |-> "startMessageCorrupter",
+  S |-> "AcknowledgeMessage",
+  R |-> "startReceiver" ]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> [counter |-> 2, content |-> "b", checksum |-> 0]]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 2
+/\ acknowledgedMessage = [S |-> [counter |-> 1, content |-> "a", checksum |-> 0]]
+/\ acknowledgedMessages = <<[counter |-> 1, content |-> "a", checksum |-> 0]>>
+/\ acknowledgeChannel = <<[counter |-> 2, content |-> "b", checksum |-> 0]>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <AcknowledgeMessage line 183, col 29 to line 198, col 59 of module black_channel_with_resend>
+/\ createMessageCounter = 2
+/\ corruptionCounter = 0
+/\ pc = [MC |-> "startMessageCorrupter", S |-> "startSender", R |-> "startReceiver"]
+/\ sendMessage = [S |-> <<>>]
+/\ receivedMessage = [R |-> [counter |-> 2, content |-> "b", checksum |-> 0]]
+/\ randomNumber = [MC |-> defaultInitValue]
+/\ currentMessageCounter = 3
+/\ acknowledgedMessage = [S |-> [counter |-> 2, content |-> "b", checksum |-> 0]]
+/\ acknowledgedMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ acknowledgeChannel = <<>>
+/\ sendMessages = << [counter |-> 1, content |-> "a", checksum |-> 0],
+   [counter |-> 2, content |-> "b", checksum |-> 0] >>
+/\ message = [counter |-> 2, content |-> "b", checksum |-> 0]
+/\ messageChannel = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2022-03-24 19:40:42
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 126, col 1 to line 126, col 4 of module black_channel_with_resend>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 127, col 9 to line 144, col 86 of module black_channel_with_resend: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<startSender line 146, col 1 to line 146, col 17 of module black_channel_with_resend>: 1658:4125
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 146, col 25 to line 146, col 48 of module black_channel_with_resend: 6743
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 146, col 25 to line 146, col 32 of module black_channel_with_resend: 4860
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 147, col 28 to line 147, col 73 of module black_channel_with_resend: 1883
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 148, col 31 to line 148, col 72 of module black_channel_with_resend: 1644
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 148, col 31 to line 148, col 50 of module black_channel_with_resend: 1883
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 148, col 54 to line 148, col 72 of module black_channel_with_resend: 1883
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 148, col 77 to line 148, col 119 of module black_channel_with_resend: 1644
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 148, col 77 to line 148, col 97 of module black_channel_with_resend: 1699
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 148, col 102 to line 148, col 119 of module black_channel_with_resend: 1699
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 31 to line 149, col 71 of module black_channel_with_resend: 1644
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 150, col 31 to line 150, col 58 of module black_channel_with_resend: 598
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 150, col 31 to line 150, col 54 of module black_channel_with_resend: 1883
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 151, col 31 to line 151, col 78 of module black_channel_with_resend: 598
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 152, col 25 to line 158, col 52 of module black_channel_with_resend: 4125
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<CreateMessage line 160, col 1 to line 160, col 19 of module black_channel_with_resend>: 336:2740
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 160, col 27 to line 160, col 52 of module black_channel_with_resend: 6224
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 160, col 27 to line 160, col 34 of module black_channel_with_resend: 4854
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 161, col 27 to line 161, col 74 of module black_channel_with_resend: 1370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 163, col 29 to line 165, col 78 of module black_channel_with_resend: 2740
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 162, col 36 to line 162, col 38 of module black_channel_with_resend: 1370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 166, col 27 to line 166, col 67 of module black_channel_with_resend: 2740
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 167, col 27 to line 171, col 71 of module black_channel_with_resend: 2740
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<SendMessage line 173, col 1 to line 173, col 17 of module black_channel_with_resend>: 398:1209
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 173, col 25 to line 173, col 48 of module black_channel_with_resend: 6061
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 173, col 25 to line 173, col 32 of module black_channel_with_resend: 4852
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 174, col 25 to line 174, col 104 of module black_channel_with_resend: 1209
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 175, col 25 to line 175, col 65 of module black_channel_with_resend: 1209
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 176, col 25 to line 181, col 69 of module black_channel_with_resend: 1209
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AcknowledgeMessage line 183, col 1 to line 183, col 24 of module black_channel_with_resend>: 251:398
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 183, col 32 to line 183, col 62 of module black_channel_with_resend: 5244
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 183, col 32 to line 183, col 39 of module black_channel_with_resend: 4850
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 32 to line 184, col 58 of module black_channel_with_resend: 394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 184, col 32 to line 184, col 54 of module black_channel_with_resend: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 185, col 32 to line 185, col 118 of module black_channel_with_resend: 394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 185, col 55 to line 185, col 118 of module black_channel_with_resend: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 186, col 32 to line 186, col 78 of module black_channel_with_resend: 394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 186, col 54 to line 186, col 78 of module black_channel_with_resend: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 187, col 36 to line 187, col 93 of module black_channel_with_resend: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 188, col 43 to line 188, col 92 of module black_channel_with_resend: 381
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 188, col 68 to line 188, col 92 of module black_channel_with_resend: 385
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 189, col 43 to line 189, col 123 of module black_channel_with_resend: 381
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 189, col 67 to line 189, col 123 of module black_channel_with_resend: 385
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 190, col 43 to line 190, col 46 of module black_channel_with_resend: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 191, col 43 to line 192, col 78 of module black_channel_with_resend: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 193, col 32 to line 193, col 72 of module black_channel_with_resend: 394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 193, col 38 to line 193, col 72 of module black_channel_with_resend: 398
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 194, col 32 to line 198, col 59 of module black_channel_with_resend: 394
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<startReceiver line 203, col 1 to line 203, col 19 of module black_channel_with_resend>: 965:1913
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 203, col 27 to line 203, col 52 of module black_channel_with_resend: 6757
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 203, col 27 to line 203, col 34 of module black_channel_with_resend: 4844
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 204, col 27 to line 204, col 50 of module black_channel_with_resend: 1913
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 204, col 27 to line 204, col 46 of module black_channel_with_resend: 3304
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 205, col 27 to line 205, col 70 of module black_channel_with_resend: 1913
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 206, col 27 to line 212, col 71 of module black_channel_with_resend: 1913
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ReceiveMessage line 214, col 1 to line 214, col 20 of module black_channel_with_resend>: 896:1352
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 214, col 28 to line 214, col 54 of module black_channel_with_resend: 6194
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 214, col 28 to line 214, col 35 of module black_channel_with_resend: 4842
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 215, col 28 to line 215, col 50 of module black_channel_with_resend: 1352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 215, col 28 to line 215, col 46 of module black_channel_with_resend: 1540
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 216, col 28 to line 216, col 102 of module black_channel_with_resend: 1352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 217, col 28 to line 217, col 66 of module black_channel_with_resend: 1352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 218, col 28 to line 218, col 100 of module black_channel_with_resend: 1352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 219, col 28 to line 219, col 70 of module black_channel_with_resend: 1352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 220, col 28 to line 225, col 55 of module black_channel_with_resend: 1352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<startMessageCorrupter line 229, col 1 to line 229, col 27 of module black_channel_with_resend>: 1216:1914
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 229, col 35 to line 229, col 68 of module black_channel_with_resend: 6754
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 229, col 35 to line 229, col 42 of module black_channel_with_resend: 4840
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 230, col 35 to line 230, col 58 of module black_channel_with_resend: 1914
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 230, col 35 to line 230, col 54 of module black_channel_with_resend: 3132
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 231, col 35 to line 231, col 77 of module black_channel_with_resend: 1914
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 232, col 35 to line 241, col 62 of module black_channel_with_resend: 1914
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<RemoveMessage line 243, col 1 to line 243, col 19 of module black_channel_with_resend>: 926:1708
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 243, col 27 to line 243, col 52 of module black_channel_with_resend: 6548
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 243, col 27 to line 243, col 34 of module black_channel_with_resend: 4840
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 244, col 27 to line 244, col 96 of module black_channel_with_resend: 1708
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 244, col 45 to line 244, col 96 of module black_channel_with_resend: 1708
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 6, col 21 to line 10, col 37 of module black_channel_with_resend: 1708:2523
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 244, col 53 to line 244, col 79 of module black_channel_with_resend: 525
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 244, col 82 to line 244, col 95 of module black_channel_with_resend: 1708
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 245, col 27 to line 245, col 68 of module black_channel_with_resend: 1708
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 246, col 27 to line 246, col 77 of module black_channel_with_resend: 1708
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 247, col 27 to line 252, col 54 of module black_channel_with_resend: 1708
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv_164814723963787000 line 19, col 1 to line 19, col 22 of module MC>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 20, col 1 to line 20, col 30 of module MC: 7575
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(18) at 2022-03-24 19:40:42: 15.327 states generated (404.050 s/min), 6.647 distinct states found (175.228 ds/min), 1.799 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+15327 states generated, 6647 distinct states found, 1799 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 18.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 5 and the 95th percentile is 3).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 2294ms at (2022-03-24 19:40:42)
+@!@!@ENDMSG 2186 @!@!@
