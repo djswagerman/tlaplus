@@ -1,0 +1,94 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-6006197281449715445 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 2 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]",style = filled]
+-6006197281449715445 -> -8273404531090350299 [label="",color="2",fontcolor="2"];
+-8273404531090350299 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 2 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 0 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-6006197281449715445 -> 7968524413930728786 [label="",color="2",fontcolor="2"];
+7968524413930728786 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 1 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-8273404531090350299 -> -6817664650048913435 [label="",color="2",fontcolor="2"];
+-6817664650048913435 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 2 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 0 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-6006197281449715445 -> -5367013921038564242 [label="",color="2",fontcolor="2"];
+-5367013921038564242 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 2 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+7968524413930728786 -> 5701178555226598268 [label="",color="2",fontcolor="2"];
+5701178555226598268 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 1 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 1 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-8273404531090350299 -> 5701178555226598268 [label="",color="2",fontcolor="2"];
+-6817664650048913435 -> 7156954032953822140 [label="",color="2",fontcolor="2"];
+7156954032953822140 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 1 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-5367013921038564242 -> -7777773410579463616 [label="",color="2",fontcolor="2"];
+-7777773410579463616 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 2 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 0 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-8273404531090350299 -> -7777773410579463616 [label="",color="2",fontcolor="2"];
+5701178555226598268 -> 7156954032953822140 [label="",color="2",fontcolor="2"];
+7968524413930728786 -> -222984415353512790 [label="",color="2",fontcolor="2"];
+-222984415353512790 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 0 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 2 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-5367013921038564242 -> 8625757363933032503 [label="",color="2",fontcolor="2"];
+8625757363933032503 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+5701178555226598268 -> -2491464933818852732 [label="",color="2",fontcolor="2"];
+-2491464933818852732 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 0 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 2 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-5367013921038564242 -> -3728623728381417703 [label="",color="2",fontcolor="2"];
+-3728623728381417703 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 2 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+7968524413930728786 -> 8625757363933032503 [label="",color="2",fontcolor="2"];
+-7777773410579463616 -> -5169023806270414208 [label="",color="2",fontcolor="2"];
+-6817664650048913435 -> -5169023806270414208 [label="",color="2",fontcolor="2"];
+-5169023806270414208 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 2 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 0 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-7777773410579463616 -> 6214859269086737945 [label="",color="2",fontcolor="2"];
+8625757363933032503 -> 6214859269086737945 [label="",color="2",fontcolor="2"];
+7156954032953822140 -> -1071657006873789884 [label="",color="2",fontcolor="2"];
+-1071657006873789884 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 2 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+5701178555226598268 -> 6214859269086737945 [label="",color="2",fontcolor="2"];
+6214859269086737945 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+8625757363933032503 -> -1889551447485742641 [label="",color="2",fontcolor="2"];
+-1889551447485742641 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 0 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 2 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+7156954032953822140 -> 8823574101339494105 [label="",color="2",fontcolor="2"];
+8823574101339494105 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 1 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-222984415353512790 -> -2491464933818852732 [label="",color="2",fontcolor="2"];
+-7777773410579463616 -> -1312234736218873545 [label="",color="2",fontcolor="2"];
+-1312234736218873545 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 2 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 0 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-3728623728381417703 -> -1312234736218873545 [label="",color="2",fontcolor="2"];
+-222984415353512790 -> -1889551447485742641 [label="",color="2",fontcolor="2"];
+8625757363933032503 -> 1040636766519825216 [label="",color="2",fontcolor="2"];
+1040636766519825216 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 1 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-2491464933818852732 -> -1071657006873789884 [label="",color="2",fontcolor="2"];
+-1071657006873789884 -> -1728942992895187167 [label="",color="2",fontcolor="2"];
+-1728942992895187167 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 2 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-3728623728381417703 -> 1040636766519825216 [label="",color="2",fontcolor="2"];
+-5169023806270414208 -> 8823574101339494105 [label="",color="2",fontcolor="2"];
+8823574101339494105 -> -1728942992895187167 [label="",color="2",fontcolor="2"];
+-1889551447485742641 -> -4301584205851342879 [label="",color="2",fontcolor="2"];
+-2491464933818852732 -> -4301584205851342879 [label="",color="2",fontcolor="2"];
+-4301584205851342879 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 0 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 2 @@ 100 :> 1), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+6214859269086737945 -> 8823574101339494105 [label="",color="2",fontcolor="2"];
+-1889551447485742641 -> -7204849251357449544 [label="",color="2",fontcolor="2"];
+-7204849251357449544 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 0 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 2 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+8823574101339494105 -> 267520913396561326 [label="",color="2",fontcolor="2"];
+267520913396561326 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 1 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 1 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-5169023806270414208 -> -4501843693394279945 [label="",color="2",fontcolor="2"];
+-4501843693394279945 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 2 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 0 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-1728942992895187167 -> -7943150462238931882 [label="",color="2",fontcolor="2"];
+-7943150462238931882 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 2 @@ 50 :> 2 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+1040636766519825216 -> 3457164367746127214 [label="",color="2",fontcolor="2"];
+3457164367746127214 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 1 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 1 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+6214859269086737945 -> -4301584205851342879 [label="",color="2",fontcolor="2"];
+-1312234736218873545 -> -4501843693394279945 [label="",color="2",fontcolor="2"];
+1040636766519825216 -> -7204849251357449544 [label="",color="2",fontcolor="2"];
+-7204849251357449544 -> -4789438790183885674 [label="",color="2",fontcolor="2"];
+-4789438790183885674 [label="/\\ customers = [c1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 0 @@ 100 :> 0), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 0, desert_white |-> 0, ocean_blue |-> 0]]]]\n/\\ vending_machines = [v1 |-> [assets |-> [credit |-> (25 :> 1 @@ 50 :> 2 @@ 100 :> 2), bank |-> (25 :> 0 @@ 50 :> 0 @@ 100 :> 0), product |-> [saffron_sky |-> 2, desert_white |-> 2, ocean_blue |-> 2]]]]"];
+-4301584205851342879 -> -1728942992895187167 [label="",color="2",fontcolor="2"];
+267520913396561326 -> -7943150462238931882 [label="",color="2",fontcolor="2"];
+6214859269086737945 -> 3457164367746127214 [label="",color="2",fontcolor="2"];
+-1312234736218873545 -> 3457164367746127214 [label="",color="2",fontcolor="2"];
+-4301584205851342879 -> -4789438790183885674 [label="",color="2",fontcolor="2"];
+3457164367746127214 -> 267520913396561326 [label="",color="2",fontcolor="2"];
+-4501843693394279945 -> 267520913396561326 [label="",color="2",fontcolor="2"];
+-4789438790183885674 -> -7943150462238931882 [label="",color="2",fontcolor="2"];
+3457164367746127214 -> -4789438790183885674 [label="",color="2",fontcolor="2"];
+{rank = same; -6006197281449715445;}
+{rank = same; -8273404531090350299;7968524413930728786;-5367013921038564242;}
+{rank = same; -6817664650048913435;-222984415353512790;5701178555226598268;-3728623728381417703;-7777773410579463616;8625757363933032503;}
+{rank = same; 6214859269086737945;1040636766519825216;-1312234736218873545;-1889551447485742641;-5169023806270414208;7156954032953822140;-2491464933818852732;}
+{rank = same; 8823574101339494105;-4301584205851342879;-4501843693394279945;-7204849251357449544;3457164367746127214;-1071657006873789884;}
+{rank = same; -1728942992895187167;-4789438790183885674;267520913396561326;}
+}
+}
