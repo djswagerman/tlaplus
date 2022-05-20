@@ -1,0 +1,98 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-6781080548619628677 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board1\"],\n         [state |-> \"unprocessed\", name |-> \"board2\"],\n         [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"] >> ]\n/\\ system = [runIn |-> <<>>, workarea |-> <<>>, runOut |-> <<>>]",style = filled]
+-6781080548619628677 -> 325906464514097818 [label="",color="2",fontcolor="2"];
+325906464514097818 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board2\"],\n         [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board1\"]>>,\n  workarea |-> <<>>,\n  runOut |-> <<>> ]"];
+325906464514097818 -> 7350615475280968290 [label="",color="3",fontcolor="3"];
+7350615475280968290 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board2\"],\n         [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board1\"]>>,\n  runOut |-> <<>> ]"];
+7350615475280968290 -> 5258768755661849350 [label="",color="2",fontcolor="2"];
+5258768755661849350 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board2\"]>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board1\"]>>,\n  runOut |-> <<>> ]"];
+7350615475280968290 -> -1368480524064057112 [label="",color="4",fontcolor="4"];
+-1368480524064057112 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board2\"],\n         [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board1\"]>> ]"];
+5258768755661849350 -> -6408624694338687322 [label="",color="4",fontcolor="4"];
+-6408624694338687322 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board2\"]>>,\n  workarea |-> <<>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board1\"]>> ]"];
+-1368480524064057112 -> -6408624694338687322 [label="",color="2",fontcolor="2"];
+-6408624694338687322 -> 2415785158195760403 [label="",color="3",fontcolor="3"];
+2415785158195760403 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board2\"]>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board1\"]>> ]"];
+-1368480524064057112 -> 6989854867315487444 [label="",color="5",fontcolor="5"];
+6989854867315487444 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board2\"],\n         [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"] >> ]\n/\\ system = [runIn |-> <<>>, workarea |-> <<>>, runOut |-> <<>>]"];
+2415785158195760403 -> 2473439814387963874 [label="",color="2",fontcolor="2"];
+2473439814387963874 [label="/\\ environment = [boards |-> <<[state |-> \"unprocessed\", name |-> \"board4\"]>>]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board3\"]>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board2\"]>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board1\"]>> ]"];
+-6408624694338687322 -> -2670786341501347088 [label="",color="5",fontcolor="5"];
+-2670786341501347088 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board2\"]>>,\n  workarea |-> <<>>,\n  runOut |-> <<>> ]"];
+2415785158195760403 -> 3789217575705739640 [label="",color="5",fontcolor="5"];
+3789217575705739640 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board2\"]>>,\n  runOut |-> <<>> ]"];
+6989854867315487444 -> -2670786341501347088 [label="",color="2",fontcolor="2"];
+3789217575705739640 -> -5204002708671112129 [label="",color="2",fontcolor="2"];
+2473439814387963874 -> -5204002708671112129 [label="",color="5",fontcolor="5"];
+-5204002708671112129 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board3\"]>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board2\"]>>,\n  runOut |-> <<>> ]"];
+-2670786341501347088 -> 3789217575705739640 [label="",color="3",fontcolor="3"];
+3789217575705739640 -> -3167824577972955342 [label="",color="4",fontcolor="4"];
+-3167824577972955342 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board2\"]>> ]"];
+-5204002708671112129 -> -6348424551772716445 [label="",color="4",fontcolor="4"];
+-6348424551772716445 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board3\"]>>,\n  workarea |-> <<>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board2\"]>> ]"];
+-3167824577972955342 -> -6348424551772716445 [label="",color="2",fontcolor="2"];
+-6348424551772716445 -> -7542562366288230034 [label="",color="3",fontcolor="3"];
+-7542562366288230034 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board3\"]>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board2\"]>> ]"];
+-3167824577972955342 -> -7054805190181581965 [label="",color="5",fontcolor="5"];
+-7054805190181581965 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board3\"],\n         [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"] >> ]\n/\\ system = [runIn |-> <<>>, workarea |-> <<>>, runOut |-> <<>>]"];
+-7542562366288230034 -> 6769608733282206147 [label="",color="2",fontcolor="2"];
+6769608733282206147 [label="/\\ environment = [boards |-> <<[state |-> \"processed\", name |-> \"board1\"]>>]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board4\"]>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board3\"]>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board2\"]>> ]"];
+-6348424551772716445 -> 2047978306663806404 [label="",color="5",fontcolor="5"];
+2047978306663806404 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board3\"]>>,\n  workarea |-> <<>>,\n  runOut |-> <<>> ]"];
+6769608733282206147 -> 7708779383102993296 [label="",color="5",fontcolor="5"];
+7708779383102993296 [label="/\\ environment = [ boards |->\n      << [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board4\"]>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board3\"]>>,\n  runOut |-> <<>> ]"];
+-7542562366288230034 -> 9037856387699268311 [label="",color="5",fontcolor="5"];
+9037856387699268311 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board3\"]>>,\n  runOut |-> <<>> ]"];
+-7054805190181581965 -> 2047978306663806404 [label="",color="2",fontcolor="2"];
+9037856387699268311 -> 7708779383102993296 [label="",color="2",fontcolor="2"];
+7708779383102993296 -> -7551779568109342369 [label="",color="4",fontcolor="4"];
+-7551779568109342369 [label="/\\ environment = [ boards |->\n      << [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board4\"]>>,\n  workarea |-> <<>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board3\"]>> ]"];
+2047978306663806404 -> 9037856387699268311 [label="",color="3",fontcolor="3"];
+9037856387699268311 -> 6479524028345417592 [label="",color="4",fontcolor="4"];
+6479524028345417592 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board3\"]>> ]"];
+-7551779568109342369 -> 7992899829879709603 [label="",color="3",fontcolor="3"];
+7992899829879709603 [label="/\\ environment = [ boards |->\n      << [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board4\"]>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board3\"]>> ]"];
+6479524028345417592 -> -7551779568109342369 [label="",color="2",fontcolor="2"];
+7992899829879709603 -> 8748982172078172701 [label="",color="5",fontcolor="5"];
+8748982172078172701 [label="/\\ environment = [ boards |->\n      << [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"],\n         [state |-> \"processed\", name |-> \"board3\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<[state |-> \"in process\", name |-> \"board4\"]>>,\n  runOut |-> <<>> ]"];
+-7551779568109342369 -> -4982259173705408115 [label="",color="5",fontcolor="5"];
+-4982259173705408115 [label="/\\ environment = [ boards |->\n      << [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"],\n         [state |-> \"processed\", name |-> \"board3\"] >> ]\n/\\ system = [ runIn |-> <<[state |-> \"waiting\", name |-> \"board4\"]>>,\n  workarea |-> <<>>,\n  runOut |-> <<>> ]"];
+8748982172078172701 -> 6191827526563988704 [label="",color="4",fontcolor="4"];
+6191827526563988704 [label="/\\ environment = [ boards |->\n      << [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"],\n         [state |-> \"processed\", name |-> \"board3\"] >> ]\n/\\ system = [ runIn |-> <<>>,\n  workarea |-> <<>>,\n  runOut |-> <<[state |-> \"processed\", name |-> \"board4\"]>> ]"];
+6479524028345417592 -> -4484504245031399253 [label="",color="5",fontcolor="5"];
+-4484504245031399253 [label="/\\ environment = [ boards |->\n      << [state |-> \"unprocessed\", name |-> \"board4\"],\n         [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"],\n         [state |-> \"processed\", name |-> \"board3\"] >> ]\n/\\ system = [runIn |-> <<>>, workarea |-> <<>>, runOut |-> <<>>]"];
+6191827526563988704 -> -274008628792256651 [label="",color="5",fontcolor="5"];
+-274008628792256651 [label="/\\ environment = [ boards |->\n      << [state |-> \"processed\", name |-> \"board1\"],\n         [state |-> \"processed\", name |-> \"board2\"],\n         [state |-> \"processed\", name |-> \"board3\"],\n         [state |-> \"processed\", name |-> \"board4\"] >> ]\n/\\ system = [runIn |-> <<>>, workarea |-> <<>>, runOut |-> <<>>]"];
+-4982259173705408115 -> 8748982172078172701 [label="",color="3",fontcolor="3"];
+-4484504245031399253 -> -4982259173705408115 [label="",color="2",fontcolor="2"];
+-274008628792256651 -> -274008628792256651 [label="",color="6",fontcolor="6"];
+{rank = same; -6781080548619628677;}
+{rank = same; 325906464514097818;}
+{rank = same; 7350615475280968290;}
+{rank = same; -1368480524064057112;5258768755661849350;}
+{rank = same; -6408624694338687322;6989854867315487444;}
+{rank = same; 2415785158195760403;-2670786341501347088;}
+{rank = same; 3789217575705739640;2473439814387963874;}
+{rank = same; -3167824577972955342;-5204002708671112129;}
+{rank = same; -7054805190181581965;-6348424551772716445;}
+{rank = same; 2047978306663806404;-7542562366288230034;}
+{rank = same; 9037856387699268311;6769608733282206147;}
+{rank = same; 6479524028345417592;7708779383102993296;}
+{rank = same; -4484504245031399253;-7551779568109342369;}
+{rank = same; -4982259173705408115;7992899829879709603;}
+{rank = same; 8748982172078172701;}
+{rank = same; 6191827526563988704;}
+{rank = same; -274008628792256651;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+BoardFinished [label="BoardFinished",fillcolor=5]
+ProcessBoard [label="ProcessBoard",fillcolor=3]
+BoardToRunOut [label="BoardToRunOut",fillcolor=4]
+BoardOnRunin [label="BoardOnRunin",fillcolor=2]
+AllBoardsProcessed [label="AllBoardsProcessed",fillcolor=6]
+}}
